@@ -1,6 +1,5 @@
 # Copilot Instructions
 
-- Use **Modular Monolith Architecture** for solution design.
 - Prefer **XUnit** as the testing framework.
 - Apply **.NET best practices**, including:
   - SOLID principles and Dependency Injection.
