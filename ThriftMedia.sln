@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftLit.AppHost", "src\ThriftLit.AppHost\ThriftLit.AppHost.csproj", "{3E7A5590-B759-49BE-B73E-73B405FFD43F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.AppHost", "src\ThriftMedia.AppHost\ThriftMedia.AppHost.csproj", "{3E7A5590-B759-49BE-B73E-73B405FFD43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftLit.ServiceDefaults", "src\ThriftLit.ServiceDefaults\ThriftLit.ServiceDefaults.csproj", "{69E5A569-802D-498F-A355-9EEE52AA9283}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.ServiceDefaults", "src\ThriftMedia.ServiceDefaults\ThriftMedia.ServiceDefaults.csproj", "{69E5A569-802D-498F-A355-9EEE52AA9283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
