@@ -9,3 +9,5 @@
   - Secure coding practices following OWASP guidelines.
 - Implement **CQRS (Command Query Responsibility Segregation)** to separate read and write concerns.
 - Use **MediatR for command and query handling**, ensuring decoupled communication between components.
+- Use **FluentValidation** for model validation, ensuring clean and maintainable validation logic.
+- Use **.NET Aspire** for app hosting and configuration, ensuring a clean separation of concerns.
