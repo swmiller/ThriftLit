@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.AppHost", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.ServiceDefaults", "src\ThriftMedia.ServiceDefaults\ThriftMedia.ServiceDefaults.csproj", "{69E5A569-802D-498F-A355-9EEE52AA9283}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.Web", "src\ThriftMedia.Web\ThriftMedia.Web.csproj", "{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.Api", "src\ThriftMedia.Api\ThriftMedia.Api.csproj", "{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,30 @@ Global
 		{69E5A569-802D-498F-A355-9EEE52AA9283}.Release|x64.Build.0 = Release|Any CPU
 		{69E5A569-802D-498F-A355-9EEE52AA9283}.Release|x86.ActiveCfg = Release|Any CPU
 		{69E5A569-802D-498F-A355-9EEE52AA9283}.Release|x86.Build.0 = Release|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Debug|x64.Build.0 = Debug|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Debug|x86.Build.0 = Debug|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Release|x64.ActiveCfg = Release|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Release|x64.Build.0 = Release|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Release|x86.ActiveCfg = Release|Any CPU
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE}.Release|x86.Build.0 = Release|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Debug|x64.Build.0 = Debug|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Debug|x86.Build.0 = Debug|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Release|x64.ActiveCfg = Release|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Release|x64.Build.0 = Release|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +78,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3E7A5590-B759-49BE-B73E-73B405FFD43F} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{69E5A569-802D-498F-A355-9EEE52AA9283} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{11F73DA3-DC3D-4188-A6FA-4A0FAD0D9FEE} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{1B578C71-BE21-4E71-BE51-7D8ABA621BC8} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F8F1201-C07B-4701-95FE-276EBD4991EA}

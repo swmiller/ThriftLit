@@ -1,0 +1,6 @@
+@ThriftMedia.Api_HostAddress = http://localhost:5123
+
+GET {{ThriftMedia.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
