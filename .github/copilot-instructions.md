@@ -13,3 +13,5 @@
 - Use **.NET Aspire** for app hosting and configuration, ensuring a clean separation of concerns.
 - Avoid using "AutoMapper". Instead generate "To" methods when the source object needs to be mapped to a different object type.
 - Use **Blazor** for building interactive web UIs, leveraging its component model.
+- Use Microsoft SQL Server as the database, ensuring efficient data storage and retrieval.
+- Use **Entity Framework Core** for data access, ensuring efficient and maintainable database interactions.

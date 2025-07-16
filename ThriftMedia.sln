@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.Api", "src\Thri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThriftMedia.Contracts", "src\ThriftMedia.Contracts\ThriftMedia.Contracts.csproj", "{8EA63BA6-C094-4395-A8E8-E1DCE3B5CF1C}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ThriftMedia.Database", "src\ThriftMedia.Database\ThriftMedia.Database.sqlproj", "{1C5A42D7-37D4-42B5-8434-F03B0B20369F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,24 @@ Global
 		{8EA63BA6-C094-4395-A8E8-E1DCE3B5CF1C}.Release|x64.Build.0 = Release|Any CPU
 		{8EA63BA6-C094-4395-A8E8-E1DCE3B5CF1C}.Release|x86.ActiveCfg = Release|Any CPU
 		{8EA63BA6-C094-4395-A8E8-E1DCE3B5CF1C}.Release|x86.Build.0 = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|x64.Build.0 = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|x64.Build.0 = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|x64.Deploy.0 = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|x86.Build.0 = Release|Any CPU
+		{1C5A42D7-37D4-42B5-8434-F03B0B20369F}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
