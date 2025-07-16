@@ -6,7 +6,7 @@
     <Name>ThriftMedia.Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{1c5a42d7-37d4-42b5-8434-f03b0b20369f}</ProjectGuid>
+    <ProjectGuid>{e7ca41dc-1ea7-47b3-a1bc-634cc783f160}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
