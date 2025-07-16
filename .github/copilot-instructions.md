@@ -1,6 +1,11 @@
 # Copilot Instructions
 
 - Prefer **XUnit** as the testing framework.
+- Use **Test Driven Development (TDD)** best practices:
+  - Write tests before implementing new features or fixing bugs.
+  - Ensure all new code is covered by unit tests.
+  - Refactor code only when tests are passing.
+  - Maintain fast, reliable, and isolated tests.
 - Apply **.NET best practices**, including:
   - SOLID principles and Dependency Injection.
   - Async programming with async/await.
