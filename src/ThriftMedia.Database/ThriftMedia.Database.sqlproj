@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{e7ca41dc-1ea7-47b3-a1bc-634cc783f160}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -56,5 +56,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Schemas" />
+    <Folder Include="Tables" />
+    <Folder Include="Indexes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\StoreOwner.sql" />
+    <Build Include="Tables\MediaItems.sql" />
+    <Build Include="Schemas\media.sql" />
+    <Build Include="Indexes\MediaItems.FullTextIndexes.sql" />
   </ItemGroup>
 </Project>
