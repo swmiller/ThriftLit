@@ -15,3 +15,4 @@
 - Use **Blazor** for building interactive web UIs, leveraging its component model.
 - Use Microsoft SQL Server as the database, ensuring efficient data storage and retrieval.
 - Use **Entity Framework Core** for data access, ensuring efficient and maintainable database interactions.
+- Use **Bootstrap** for web site layout and styling, ensuring responsive and consistent UI design.
