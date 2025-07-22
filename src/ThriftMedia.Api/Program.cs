@@ -22,4 +22,7 @@ if (app.Environment.IsDevelopment())
 // Register media endpoints
 app.MapMediaEndpoints();
 
+// Register store owner endpoints
+app.MapStoreOwnerEndpoints();
+
 app.Run();
