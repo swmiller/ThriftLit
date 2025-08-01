@@ -44,13 +44,13 @@ public partial class ThriftMediaDbContext : DbContext
                 .HasConstraintName("FK_Media_Store");
         });
 
+
         modelBuilder.Entity<Store>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Store__3214EC07271D525F");
 
             entity.ToTable("Store", "media");
 
-            entity.Property(e => e.Address).HasMaxLength(500);
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -59,6 +59,15 @@ public partial class ThriftMediaDbContext : DbContext
             entity.Property(e => e.StoreName).HasMaxLength(200);
             entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
             entity.Property(e => e.UpdatedBy).HasMaxLength(100);
+
+            entity.OwnsOne(e => e.Address, address =>
+            {
+                address.Property(a => a.Street).HasMaxLength(100);
+                address.Property(a => a.City).HasMaxLength(50);
+                address.Property(a => a.State).HasMaxLength(2);
+                address.Property(a => a.ZipCode).HasMaxLength(10);
+                address.Property(a => a.Country).HasMaxLength(50);
+            });
         });
 
         OnModelCreatingPartial(modelBuilder);

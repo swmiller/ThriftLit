@@ -9,7 +9,7 @@ public partial class Store
 
     public string StoreName { get; set; } = null!;
 
-    public string Address { get; set; } = null!;
+    public Address Address { get; set; } = new Address();
 
     public string? PhoneNumber { get; set; }
 
