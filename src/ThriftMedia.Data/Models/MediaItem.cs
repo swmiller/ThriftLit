@@ -7,7 +7,7 @@ public partial class MediaItem
 {
     public int MediaId { get; set; }
 
-    public int StoreOwnerId { get; set; }
+    public int StoreId { get; set; }
 
     public string MediaType { get; set; } = null!;
 
@@ -23,5 +23,5 @@ public partial class MediaItem
 
     public DateTime? UpdatedAt { get; set; }
 
-    public virtual StoreOwner StoreOwner { get; set; } = null!;
+    public virtual Store Store { get; set; } = null!;
 }

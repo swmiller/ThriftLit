@@ -17,7 +17,7 @@ public partial class ThriftMediaDbContext : DbContext
 
     public virtual DbSet<MediaItem> MediaItems { get; set; }
 
-    public virtual DbSet<StoreOwner> StoreOwners { get; set; }
+    public virtual DbSet<Store> Stores { get; set; }
 
     // The connection string is now injected via DI in the API project. Remove OnConfiguring override.
 
@@ -38,17 +38,17 @@ public partial class ThriftMediaDbContext : DbContext
             entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
             entity.Property(e => e.UpdatedBy).HasMaxLength(100);
 
-            entity.HasOne(d => d.StoreOwner).WithMany(p => p.MediaItems)
-                .HasForeignKey(d => d.StoreOwnerId)
+            entity.HasOne(d => d.Store).WithMany(p => p.MediaItems)
+                .HasForeignKey(d => d.StoreId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_MediaItems_StoreOwner");
+                .HasConstraintName("FK_MediaItems_Store");
         });
 
-        modelBuilder.Entity<StoreOwner>(entity =>
+        modelBuilder.Entity<Store>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__StoreOwn__3214EC07271D525F");
+            entity.HasKey(e => e.Id).HasName("PK__Store__3214EC07271D525F");
 
-            entity.ToTable("StoreOwner", "media");
+            entity.ToTable("Store", "media");
 
             entity.Property(e => e.Address).HasMaxLength(500);
             entity.Property(e => e.CreatedAt)

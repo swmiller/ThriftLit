@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ThriftMedia.Data.Models;
 
-public partial class StoreOwner
+public partial class Store
 {
     public int Id { get; set; }
 
