@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ThriftMedia.Data.Models;
 
@@ -11,9 +12,11 @@ using ThriftMedia.Data.Models;
 namespace ThriftMedia.Data.Migrations
 {
     [DbContext(typeof(ThriftMediaDbContext))]
-    partial class ThriftMediaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250801212200_RenameMediaItemToMedia")]
+    partial class RenameMediaItemToMedia
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

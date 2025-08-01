@@ -15,7 +15,7 @@ public partial class ThriftMediaDbContext : DbContext
     {
     }
 
-    public virtual DbSet<MediaItem> MediaItems { get; set; }
+    public virtual DbSet<Media> MediaItems { get; set; }
 
     public virtual DbSet<Store> Stores { get; set; }
 
@@ -23,11 +23,11 @@ public partial class ThriftMediaDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<MediaItem>(entity =>
+        modelBuilder.Entity<Media>(entity =>
         {
             entity.HasKey(e => e.MediaId);
 
-            entity.ToTable("MediaItems", "media");
+            entity.ToTable("Media", "media");
 
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -41,7 +41,7 @@ public partial class ThriftMediaDbContext : DbContext
             entity.HasOne(d => d.Store).WithMany(p => p.MediaItems)
                 .HasForeignKey(d => d.StoreId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_MediaItems_Store");
+                .HasConstraintName("FK_Media_Store");
         });
 
         modelBuilder.Entity<Store>(entity =>

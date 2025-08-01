@@ -21,5 +21,5 @@ public partial class Store
 
     public DateTime? UpdatedAt { get; set; }
 
-    public virtual ICollection<MediaItem> MediaItems { get; set; } = new List<MediaItem>();
+    public virtual ICollection<Media> MediaItems { get; set; } = new List<Media>();
 }

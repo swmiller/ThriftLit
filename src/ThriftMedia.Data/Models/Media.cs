@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ThriftMedia.Data.Models;
 
-public partial class MediaItem
+public partial class Media
 {
     public int MediaId { get; set; }
 
