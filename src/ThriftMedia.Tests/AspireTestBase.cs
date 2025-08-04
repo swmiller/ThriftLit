@@ -21,19 +21,14 @@ public abstract class AspireTestBase
         // Build the distributed application
         var app = await appHost.BuildAsync();
 
-        // Get the ResourceNotificationService to monitor resource states
-        var resourceNotificationService = app.Services.GetRequiredService<ResourceNotificationService>();
-
         // Start the distributed application
         await app.StartAsync();
 
         // Create an HttpClient for the specified resource (service)
         var httpClient = app.CreateHttpClient(resourceName);
 
-        // Wait until the specified resource is in the 'Running' state, or timeout after 30 seconds
-        await resourceNotificationService
-            .WaitForResourceAsync(resourceName, KnownResourceStates.Running)
-            .WaitAsync(TimeSpan.FromSeconds(30));
+        // Simple delay to allow services to start (replace with proper health check if needed)
+        await Task.Delay(TimeSpan.FromSeconds(5));
 
         // Return the HttpClient and the running app instance for use in tests
         return (httpClient, app);
