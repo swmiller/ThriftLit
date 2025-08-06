@@ -1,6 +1,5 @@
 using Aspire.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
