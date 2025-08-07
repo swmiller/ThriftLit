@@ -7,6 +7,9 @@ public static class StoreOwnerEndpoints
 {
     public static IEndpointRouteBuilder MapStoreOwnerEndpoints(this IEndpointRouteBuilder endpoints)
     {
+        endpoints.MapGet("/storeowners", async (ThriftMediaDbContext db) =>
+            await db.Stores.AsNoTracking().ToListAsync());
+
         //// Get all store owners
         //endpoints.MapGet("/storeowners", async (ThriftMediaDbContext db) =>
         //    await db.StoreOwners.Include(s => s.MediaItems).ToListAsync());

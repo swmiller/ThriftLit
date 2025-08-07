@@ -9,7 +9,8 @@
         <UserSecretsId>4a5422ee-d706-42aa-9fac-a41005e32c73</UserSecretsId>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.4.0" />
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.4.0" />
         <ProjectReference Include="..\ThriftMedia.Web\ThriftMedia.Web.csproj" />
         <ProjectReference Include="..\ThriftMedia.Api\ThriftMedia.Api.csproj" />
     </ItemGroup>
